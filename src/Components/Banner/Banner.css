@@ -37,6 +37,10 @@
   border-radius: 30px;
 }
 
+/*-------------------------------------------------------------*/
+            /* MEDIA QUERIES FOR MOBILE DEVICES */
+/*-------------------------------------------------------------*/
+
 @media (max-width:820px) {
   .banner-section::after {
     background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;

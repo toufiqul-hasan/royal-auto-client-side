@@ -1,0 +1,17 @@
+.not-found img {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+/*-------------------------------------------------------------*/
+            /* MEDIA QUERIES FOR MOBILE DEVICES */
+/*-------------------------------------------------------------*/
+
+@media (max-width:800px) {
+  .not-found img {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+}
