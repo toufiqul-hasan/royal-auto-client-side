@@ -24,7 +24,7 @@ const AboutUs = () => {
             concentrating on that. Now, we are one of the biggest Automobiles
             importers, whole-sellers and retailers in this country consisting
             three showroom. Both of our showrooms are established at our own
-            building in the prime places of the capital city Dhaka.
+            building in the prime places of the capital.
           </p>
         </div>
         <div className="row">

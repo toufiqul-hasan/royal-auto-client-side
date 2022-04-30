@@ -16,7 +16,7 @@ const TrendingCar = () => {
     cssEase: "linear"
   };
   return (
-    <div className="slider">
+    <div className="slider gray-bg">
       <h2 className="text-center">Trending Cars Of The Year</h2>
       <Slider {...settings}>
         <div>

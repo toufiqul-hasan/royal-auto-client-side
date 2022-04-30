@@ -1,10 +1,10 @@
 .slider {
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 .slider h2 {
   margin-bottom: 20px;
+  padding-top: 50px;
 }
 
 .slider h2:after {
