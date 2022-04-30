@@ -1,0 +1,34 @@
+.section-header span {
+  color: #fa6a2f;
+}
+
+.about-content {
+	padding:20px 0;	
+}
+
+.about-content h3 {
+	margin-top:25px;
+}
+.about-content p {
+  text-align: justify;
+}
+
+.about-content span {
+  color: #fa6a2f;
+}
+
+.about-img {
+  background: #000000 none repeat scroll 0 0;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+}
+
+.about-img:hover img {
+  opacity: 0.5;
+}
