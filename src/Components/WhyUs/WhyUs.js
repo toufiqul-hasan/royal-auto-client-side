@@ -4,7 +4,7 @@ import "./WhyUs.css";
 
 const WhyUs = () => {
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mt-5 mb-5 section-name">
       <div className="text-center">
         <h2>Why Royal Auto</h2>
         <p>
@@ -12,9 +12,7 @@ const WhyUs = () => {
           name of Royal Auto in the year 1995. Quality that customer always
           looking for, we are concentrating on that. Now, we are one of the
           biggest Automobiles importers, whole-sellers and retailers in this
-          country consisting three showroom. Both of our showrooms are
-          established at our own building in the prime places of the capital
-          city Dhaka.
+          country consisting three showroom.
         </p>
       </div>
 
