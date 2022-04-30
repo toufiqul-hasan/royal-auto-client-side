@@ -13,7 +13,7 @@ const Banner = () => {
                   Allow us to guide you through the innovative stress free
                   approach in finding your dream car.
                 </p>
-                <button className="button">Learn More</button>
+                <button className="button">Read More</button>
               </div>
             </div>
           </div>

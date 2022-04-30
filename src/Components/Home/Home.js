@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../Banner/Banner";
+import HowItWork from "../HowItWork/HowItWork";
 import WhyUs from "../WhyUs/WhyUs";
 import "./Home.css";
 
@@ -8,6 +9,9 @@ const Home = () => {
     <div>
       <div>
         <Banner />
+      </div>
+      <div>
+        <HowItWork />
       </div>
       <div>
         <WhyUs />

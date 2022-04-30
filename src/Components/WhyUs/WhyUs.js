@@ -21,20 +21,19 @@ const WhyUs = () => {
       <div className="row g-4">
         <div className="col-md-3 col-sm-6">
           <div className="info">
-            <div className="icon">
+            <div className="info-icon">
               <FaRegMoneyBillAlt />
             </div>
             <h5>Best Price</h5>
             <p>
-              We work hard to ensure you that you get the best car in the city
-              within your budget.
+              We will ensure you that you get the best car within your budget.
             </p>
           </div>
         </div>
 
         <div className="col-md-3 col-sm-6">
           <div className="info">
-            <div className="icon">
+            <div className="info-icon">
               <FaThumbsUp />
             </div>
             <h5>Faster Buy & Sell</h5>
@@ -47,7 +46,7 @@ const WhyUs = () => {
 
         <div className="col-md-3 col-sm-6">
           <div className="info">
-            <div className="icon">
+            <div className="info-icon">
               <FaHistory />
             </div>
             <h5>Free Support</h5>
@@ -60,7 +59,7 @@ const WhyUs = () => {
 
         <div className="col-md-3 col-sm-6">
           <div className="info">
-            <div className="icon">
+            <div className="info-icon">
               <FaUsers />
             </div>
             <h5>Professional Dealers</h5>

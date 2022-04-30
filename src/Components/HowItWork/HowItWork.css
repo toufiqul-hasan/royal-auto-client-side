@@ -1,0 +1,19 @@
+.icons {
+  background: #fde6e6;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 110px;
+  margin: 0 auto 20px;
+}
+
+.steps {
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.steps h5 {
+  margin: 0 auto 10px;
+  font-weight: 600;
+}

@@ -1,9 +1,9 @@
 import React from "react";
+import ai1 from "../../Assets/Images/ai1.png";
+import ai2 from "../../Assets/Images/ai2.png";
+import ai3 from "../../Assets/Images/ai3.png";
+import ai4 from "../../Assets/Images/ai4.png";
 import c1 from "../../Assets/Images/c1.jpg";
-import i1 from "../../Assets/Images/i1.png";
-import i2 from "../../Assets/Images/i2.png";
-import i3 from "../../Assets/Images/i3.png";
-import i4 from "../../Assets/Images/i4.png";
 import "./ChooseUs.css";
 
 const ChooseUs = () => {
@@ -27,7 +27,7 @@ const ChooseUs = () => {
           <div className="col-lg-6">
             <div className="reason">
               <h5>
-                <img width={50} src={i1} alt="" /> AUTO LOAN FINANCE
+                <img width={50} src={ai1} alt="" /> AUTO LOAN FINANCE
               </h5>
               <p>
                 We have partners with leading Banks and Financial Institutions
@@ -36,7 +36,7 @@ const ChooseUs = () => {
             </div>
             <div className="reason">
               <h5>
-                <img width={50} src={i2} alt="" /> WIDE RANGE OF BRANDS
+                <img width={50} src={ai2} alt="" /> WIDE RANGE OF BRANDS
               </h5>
               <p>
                 With a robust selection of popular vehicles on hand, as well as
@@ -45,7 +45,7 @@ const ChooseUs = () => {
             </div>
             <div className="reason">
               <h5>
-                <img width={50} src={i3} alt="" /> TRUSTED BY THOUSANDS
+                <img width={50} src={ai3} alt="" /> TRUSTED BY THOUSANDS
               </h5>
               <p>
                 10 new offers every day. 350 offers on site, trusted by a
@@ -54,7 +54,7 @@ const ChooseUs = () => {
             </div>
             <div className="reason">
               <h5>
-                <img width={50} src={i4} alt="" /> CAR SERVICE & MAINTENANCE
+                <img width={50} src={ai4} alt="" /> CAR SERVICE & MAINTENANCE
               </h5>
               <p>
                 Our service department have well trained mechanics to maintain
