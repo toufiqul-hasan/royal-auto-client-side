@@ -6,9 +6,9 @@ import "./Team.css";
 
 const Team = () => {
   return (
-    <div class="mt-5 mb-5">
-      <div class="container">
-        <div class="team text-center">
+    <div className="mt-5 mb-5">
+      <div className="container">
+        <div className="team text-center">
           <h2>
             Meet <span> Our Team </span>
           </h2>
@@ -21,13 +21,13 @@ const Team = () => {
             into place a Quality System.
           </p>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <div class="team-member">
-              <div class="team-img">
+        <div className="row g-4">
+          <div className="col-lg-4">
+            <div className="team-member">
+              <div className="team-img">
                 <img src={t1} alt="" />
-                <div class="team-more-info">
-                  <div class="info-wrap">
+                <div className="team-more-info">
+                  <div className="info-wrap">
                     <p>
                       <span>Phone:</span> +88-016-456-78-123
                     </p>
@@ -37,18 +37,18 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div class="team-info">
+              <div className="team-info">
                 <h6>Sydnee Olivia</h6>
                 <p>Chief Finance Manager</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="team-member">
-              <div class="team-img">
+          <div className="col-lg-4">
+            <div className="team-member">
+              <div className="team-img">
                 <img src={t2} alt="" />
-                <div class="team-more-info">
-                  <div class="info-wrap">
+                <div className="team-more-info">
+                  <div className="info-wrap">
                     <p>
                       <span>Phone:</span> +88-016-987-65-432
                     </p>
@@ -58,18 +58,18 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div class="team-info">
+              <div className="team-info">
                 <h6>Alan Kaden</h6>
                 <p>Sales Manager</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="team-member">
-              <div class="team-img">
+          <div className="col-lg-4">
+            <div className="team-member">
+              <div className="team-img">
                 <img src={t3} alt="" />
-                <div class="team-more-info">
-                  <div class="info-wrap">
+                <div className="team-more-info">
+                  <div className="info-wrap">
                     <p>
                       <span>Phone:</span> +88-016-123-45-678
                     </p>
@@ -79,7 +79,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div class="team-info">
+              <div className="team-info">
                 <h6>Kristina Emmalee</h6>
                 <p>Executive Vice President</p>
               </div>

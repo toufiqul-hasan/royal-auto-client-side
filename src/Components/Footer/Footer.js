@@ -1,5 +1,10 @@
 import React from "react";
-import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaTwitterSquare,
+  FaLinkedin,
+} from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -8,7 +13,7 @@ const Footer = () => {
       <h2>Royal Auto</h2>
       <p>Copyright &copy; 2022 Royal Auto</p>
       <p>All Rights Reserved</p>
-      <div class="social-icon">
+      <div className="social-icon">
         <a
           target="_blank"
           href="https://www.facebook.com/t.h.shihab"

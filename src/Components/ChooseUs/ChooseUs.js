@@ -62,7 +62,7 @@ const ChooseUs = () => {
               </p>
             </div>
           </div>
-          <div class="col-lg-6 mt-5">
+          <div className="col-lg-6 mt-5">
             <div className="reason-img">
               <img src={c1} alt="" />
             </div>

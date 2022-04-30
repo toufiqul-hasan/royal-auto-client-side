@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../Banner/Banner";
+import WhyUs from "../WhyUs/WhyUs";
 import "./Home.css";
 
 const Home = () => {
@@ -7,6 +8,9 @@ const Home = () => {
     <div>
       <div>
         <Banner />
+      </div>
+      <div>
+        <WhyUs />
       </div>
     </div>
   );

@@ -1,0 +1,22 @@
+.info {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+
+.info:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.info .icon {
+  font-size: 50px;
+  color: #fa6a2f;
+  float: none;
+  margin: 0 auto 25px;
+}
+
+.info h5 {
+  margin: 0 auto 10px;
+}
