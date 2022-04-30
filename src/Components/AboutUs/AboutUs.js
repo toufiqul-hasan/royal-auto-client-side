@@ -9,9 +9,9 @@ const AboutUs = () => {
   return (
     <div className="mt-3">
       <div className="container">
-        <div className="section-header text-center">
+        <div className="about-us text-center">
           <h2>
-            Welcome to <span>Royal Auto</span>
+            Welcome To <span>Royal Auto</span>
           </h2>
           <hr />
           <p>
