@@ -7,7 +7,7 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div className="mt-3">
+    <div className="about-us">
       <div className="container">
         <div className="about-us text-center">
           <h2>
