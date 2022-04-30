@@ -1,0 +1,36 @@
+.gray-bg {
+  background: #eeeeee;
+}
+
+.choose-us span {
+  color: #fa6a2f;
+}
+
+.choose-us {
+  margin: 0 auto 30px;
+}
+
+.reason h5 {
+  margin-bottom: 8px;
+}
+
+.reason p {
+  list-style: 24px;
+  text-align: justify;
+}
+
+.reason-img img {
+  border-radius: 10px;
+}
+
+/*-------------------------------------------------------------*/
+                /* MEDIA QUERIES FOR MOBILE DEVICES */
+/*-------------------------------------------------------------*/
+
+@media (max-width:820px) {
+  .reason-img img {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}

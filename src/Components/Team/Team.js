@@ -10,7 +10,7 @@ const Team = () => {
       <div class="container">
         <div class="team text-center">
           <h2>
-            Meet Our <span> Team Member </span>
+            Meet <span> Our Team </span>
           </h2>
           <hr />
           <p>
@@ -21,8 +21,8 @@ const Team = () => {
             into place a Quality System.
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4">
+        <div class="row g-4">
+          <div class="col-lg-4">
             <div class="team-member">
               <div class="team-img">
                 <img src={t1} alt="" />
@@ -43,7 +43,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-4">
+          <div class="col-lg-4">
             <div class="team-member">
               <div class="team-img">
                 <img src={t2} alt="" />
@@ -64,7 +64,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-4">
+          <div class="col-lg-4">
             <div class="team-member">
               <div class="team-img">
                 <img src={t3} alt="" />

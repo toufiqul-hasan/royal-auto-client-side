@@ -1,5 +1,6 @@
 import React from "react";
 import AboutUs from "../AboutUs/AboutUs";
+import ChooseUs from "../ChooseUs/ChooseUs";
 import Team from "../Team/Team";
 
 const About = () => {
@@ -7,6 +8,9 @@ const About = () => {
     <div>
       <div>
         <AboutUs />
+      </div>
+      <div>
+        <ChooseUs />
       </div>
       <div>
         <Team />
