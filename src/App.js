@@ -1,6 +1,11 @@
 import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import About from "./Components/About/About";
+import Login from "./Components/Auth/Login/Login";
+import ResetPassword from "./Components/Auth/ResetPassword/ResetPassword";
+import Signup from "./Components/Auth/Signup/Signup";
 import Blogs from "./Components/Blogs/Blogs";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
@@ -16,8 +21,12 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/about" element={<About />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/resetPassword" element={<ResetPassword />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <ToastContainer />
       <Footer />
     </div>
   );

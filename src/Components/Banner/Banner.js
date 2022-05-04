@@ -8,7 +8,7 @@ const Banner = () => {
           <div className="row">
             <div className="col-lg-4">
               <div className="banner-content">
-                <h1>Find Your Next Car at Royal Auto</h1>
+                <h1>Find Your Next Dream Car at Royal Auto</h1>
                 <p>
                   Allow us to guide you through the innovative stress free
                   approach in finding your dream car.
