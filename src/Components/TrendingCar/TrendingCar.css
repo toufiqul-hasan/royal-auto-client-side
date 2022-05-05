@@ -7,16 +7,6 @@
   padding-top: 50px;
 }
 
-.slider h2:after {
-  display: block;
-  height: 2px;
-  background-color: #fa6a2f;
-  content: " ";
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-
 /*-------------------------------------------------------------*/
             /* MEDIA QUERIES FOR MOBILE DEVICES */
 /*-------------------------------------------------------------*/

@@ -39,13 +39,3 @@ cite img {
   margin-right: 10px;
   vertical-align: middle;
 }
-
-.testimonial h2:after {
-  display: block;
-  height: 2px;
-  background-color: #fa6a2f;
-  content: " ";
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 10px;
-}

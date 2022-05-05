@@ -1,10 +1,15 @@
 import React from "react";
-import { FaRegMoneyBillAlt, FaThumbsUp, FaHistory, FaUsers } from "react-icons/fa";
+import {
+  FaRegMoneyBillAlt,
+  FaThumbsUp,
+  FaHistory,
+  FaUsers,
+} from "react-icons/fa";
 import "./WhyUs.css";
 
 const WhyUs = () => {
   return (
-    <div className="container mt-5 mb-5 section-name">
+    <div className="container mt-5 mb-5 section-title">
       <div className="text-center">
         <h2>Why Royal Auto</h2>
         <p>

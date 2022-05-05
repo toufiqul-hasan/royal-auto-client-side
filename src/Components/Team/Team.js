@@ -16,7 +16,7 @@ const Team = () => {
           <p>
             We are committed to total customer satisfaction by identifying their
             specific needs, translating them into Quality vehicles and providing
-            dependable after-sales- services. This commitment is the corner
+            dependable after-sales- products. This commitment is the corner
             stone of our Quality Policy and we strive to achieve it by putting
             into place a Quality System.
           </p>
