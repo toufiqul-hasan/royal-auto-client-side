@@ -9,7 +9,7 @@ const HowItWork = () => {
   return (
     <div className="container mt-5 mb-5 section-title">
       <div className="text-center">
-        <h2>How it Work</h2>
+        <h2>How It Work</h2>
         <p>Helps you to find perfect car. Explained here how it works.</p>
       </div>
       <div className="row">

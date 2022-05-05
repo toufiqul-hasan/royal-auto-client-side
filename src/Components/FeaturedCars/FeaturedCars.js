@@ -1,11 +1,18 @@
 import React from "react";
+import { Spinner } from "react-bootstrap";
 import useProducts from "../../hooks/useProducts";
 import Product from "../Product/Product";
 import "./FeaturedCars.css";
 
 const FeaturedCars = () => {
-  const [products] = useProducts([]);
+  const [products, loading] = useProducts([]);
   return (
+    <>
+      {loading ? (
+        <div className="d-flex align-items-center justify-content-center mt-5">
+          <Spinner animation="border" variant="dark" />
+        </div>
+      ) : (
     <div className="section-title mt-5">
       <div className="text-center">
         <h2>Featured Cars</h2>
@@ -17,6 +24,8 @@ const FeaturedCars = () => {
         ))}
       </div>
     </div>
+    )}
+    </>
   );
 };
 

@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
 
 const useProducts = () => {
+  const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/car")
+    setLoading(true);
+    fetch("https://thawing-retreat-14463.herokuapp.com/car")
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => {
+        setProducts(data);
+        setLoading(false);
+      });
   }, []);
-  return [products];
+  return [products, loading];
 };
 
 export default useProducts;

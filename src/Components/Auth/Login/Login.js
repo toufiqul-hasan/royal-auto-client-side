@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Nav } from "react-bootstrap";
+import { Nav, Spinner } from "react-bootstrap";
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -11,8 +11,8 @@ const Login = () => {
   const [userInfo, setUserInfo] = useState({ email: "", password: "" });
   const [errors, setErrors] = useState({ email: "", password: "", general: "" });
 
-  const [signInWithEmailAndPassword, user,, hookError] = useSignInWithEmailAndPassword(auth);
-  const [signInWithGoogle, googleUser,, googleError] = useSignInWithGoogle(auth);
+  const [signInWithEmailAndPassword, user, loading, hookError] = useSignInWithEmailAndPassword(auth);
+  const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
 
   const handleEmailChange = (event) => {
     const emailValidation = /\S+@\S+\.\S+/;
@@ -72,6 +72,14 @@ const Login = () => {
       }
     }
   }, [hookError, googleError]);
+
+  if (loading || googleLoading) {
+    return (
+      <div className="d-flex align-items-center justify-content-center m-auto">
+        <Spinner animation="border" variant="dark" />
+      </div>
+    );
+  }
 
   return (
     <div className="login-container mt-3 mb-5">
