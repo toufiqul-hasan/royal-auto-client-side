@@ -9,7 +9,7 @@ const RequireAuth = ({ children }) => {
   const location = useLocation();
   if (loading) {
     return (
-      <div class="d-flex align-items-center justify-content-center m-auto">
+      <div className="d-flex align-items-center justify-content-center m-auto">
         <Spinner animation="border" variant="dark" />
       </div>
     );
