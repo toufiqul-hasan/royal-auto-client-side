@@ -1,0 +1,56 @@
+.car {
+  border: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0 10%;
+}
+
+.car img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.restock-button {
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #fa6a2f;
+  padding: 7px 10px;
+  border-radius: 7px;
+}
+
+.restock-button:hover {
+  background-color: #2dcc70;
+}
+
+.restock input {
+  text-align: center;
+  border: none;
+  outline: none;
+  background: #ecf0f3;
+  height: 40px;
+  border-radius: 5px;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/*-------------------------------------------------------------*/
+/* MEDIA QUERIES FOR MOBILE DEVICES */
+/*-------------------------------------------------------------*/
+
+@media (max-width:800px) {
+  .car img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+  }
+}

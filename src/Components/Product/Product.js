@@ -1,10 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import "./Product.css";
 
 const Product = ({ product }) => {
-  const { name, img, price, description, quantity, supplier } = product;
+  const { _id, name, img, price, description, quantity, supplier } = product;
+  const navigate = useNavigate();
+
+  const navigateToServiceDetail = (id) => {
+    navigate(`/inventory/${id}`);
+  };
+
   return (
     <div className="mb-5">
       <Card className="product">
@@ -15,9 +21,12 @@ const Product = ({ product }) => {
           <Card.Text>{description}</Card.Text>
           <Card.Text>Quantity: {quantity}</Card.Text>
           <Card.Text>Supplier: {supplier}</Card.Text>
-          <Link to="">
-            <button className="button">Update</button>
-          </Link>
+          <button
+            className="button"
+            onClick={() => navigateToServiceDetail(_id)}
+          >
+            Manage
+          </button>
         </Card.Body>
       </Card>
     </div>
