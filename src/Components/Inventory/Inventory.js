@@ -1,7 +1,7 @@
 import React from "react";
 import { Spinner } from "react-bootstrap";
 import useProducts from "../../hooks/useProducts";
-import Product from "../Product/Product";
+import Inventories from "../Inventories/Inventories";
 
 const Inventory = () => {
   const [products, loading] = useProducts([]);
@@ -12,10 +12,15 @@ const Inventory = () => {
           <Spinner animation="border" variant="dark" />
         </div>
       ) : (
-        <div className="products">
-          {products.map((product) => (
-            <Product key={product._id} product={product}></Product>
-          ))}
+        <div>
+          <div className="products">
+            {products.map((product) => (
+              <Inventories key={product._id} product={product}></Inventories>
+            ))}
+          </div>
+          <div className="container text-center mb-5">
+            <button className="secondary-button">Add New Item</button>
+          </div>
         </div>
       )}
     </>

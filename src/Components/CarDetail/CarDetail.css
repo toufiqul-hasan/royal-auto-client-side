@@ -13,7 +13,7 @@
   padding-top: 10px;
 }
 
-.restock-button {
+.secondary-button {
   border: none;
   font-weight: 700;
   font-size: 16px;
@@ -24,7 +24,7 @@
   border-radius: 7px;
 }
 
-.restock-button:hover {
+.secondary-button:hover {
   background-color: #2dcc70;
 }
 
