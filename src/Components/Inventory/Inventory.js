@@ -1,5 +1,6 @@
 import React from "react";
 import { Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import useProducts from "../../hooks/useProducts";
 import Inventories from "../Inventories/Inventories";
 
@@ -19,7 +20,9 @@ const Inventory = () => {
             ))}
           </div>
           <div className="container text-center mb-5">
-            <button className="secondary-button">Add New Item</button>
+            <Link to="/additem">
+              <button className="secondary-button">Add Item</button>
+            </Link>
           </div>
         </div>
       )}

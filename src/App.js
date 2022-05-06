@@ -3,6 +3,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import About from "./Components/About/About";
+import AddItem from "./Components/AddItem/AddItem";
 import Login from "./Components/Auth/Login/Login";
 import RequireAuth from "./Components/Auth/RequireAuth/RequireAuth";
 import ResetPassword from "./Components/Auth/ResetPassword/ResetPassword";
@@ -13,6 +14,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Inventory from "./Components/Inventory/Inventory";
+import MyItem from "./Components/MyItem/MyItem";
 import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
@@ -27,6 +29,22 @@ function App() {
           element={
             <RequireAuth>
               <Inventory />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/myitem"
+          element={
+            <RequireAuth>
+              <MyItem />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/additem"
+          element={
+            <RequireAuth>
+              <AddItem />
             </RequireAuth>
           }
         />

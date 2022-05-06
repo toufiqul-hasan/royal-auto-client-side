@@ -40,9 +40,6 @@ const Header = () => {
               <Nav.Link as={Link} to="home">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="inventory">
-                Inventory
-              </Nav.Link>
               <Nav.Link as={Link} to="blogs">
                 Blogs
               </Nav.Link>
@@ -57,6 +54,27 @@ const Header = () => {
                 <Nav.Link as={Link} to="login">
                   Login
                 </Nav.Link>
+              )}
+              {user ? (
+                <Nav.Link as={Link} to="inventory">
+                  Inventory
+                </Nav.Link>
+              ) : (
+                <Nav.Link />
+              )}
+              {user ? (
+                <Nav.Link as={Link} to="myitem">
+                  My Item
+                </Nav.Link>
+              ) : (
+                <Nav.Link />
+              )}
+              {user ? (
+                <Nav.Link as={Link} to="additem">
+                  Add Item
+                </Nav.Link>
+              ) : (
+                <Nav.Link />
               )}
             </Nav>
           </Navbar.Collapse>
