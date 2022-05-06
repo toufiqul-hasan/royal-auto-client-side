@@ -13,6 +13,7 @@
 
 .login-container label,
 .login-container input,
+.login-container textarea,
 .login-container button {
   display: block;
   width: 100%;
@@ -20,7 +21,8 @@
   outline: none;
 }
 
-.login-container input {
+.login-container input,
+.login-container textarea {
   background: #ecf0f3;
   margin: 15px 0 0 0;
   padding-left: 20px;
