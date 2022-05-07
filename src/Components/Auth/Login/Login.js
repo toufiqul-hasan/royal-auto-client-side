@@ -5,12 +5,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { auth } from "../../../firebase.init";
 import google from "../../../Assets/Images/google.png";
+import axios from "axios";
 import "./Login.css";
 
 const Login = () => {
   const [userInfo, setUserInfo] = useState({ email: "", password: "" });
   const [errors, setErrors] = useState({ email: "", password: "", general: "" });
-
   const [signInWithEmailAndPassword, user, loading, hookError] = useSignInWithEmailAndPassword(auth);
   const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
 
@@ -42,9 +42,13 @@ const Login = () => {
     }
   };
 
-  const handleLogin = (event) => {
+  const handleLogin = async (event) => {
     event.preventDefault();
-    signInWithEmailAndPassword(userInfo.email, userInfo.password);
+    await signInWithEmailAndPassword(userInfo.email, userInfo.password);
+    const email = userInfo.email;
+    const { data } = await axios.post("https://thawing-retreat-14463.herokuapp.com/login", { email });
+    localStorage.setItem("accessToken", data.accessToken);
+    navigate(from, { replace: true });
   };
 
   const navigate = useNavigate();

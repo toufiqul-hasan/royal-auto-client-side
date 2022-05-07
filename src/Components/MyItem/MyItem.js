@@ -3,24 +3,37 @@ import { auth } from "../../firebase.init";
 import { useAuthState } from "react-firebase-hooks/auth";
 import MyItems from "../MyItems/MyItems";
 import { Spinner } from "react-bootstrap";
+import axios from "axios";
+import { signOut } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 const MyItem = () => {
   const [user] = useAuthState(auth);
   const [car, setCar] = useState([]);
   const [reload, setReload] = useState(true);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
-    const email = user.email;
-    fetch(`https://thawing-retreat-14463.herokuapp.com/mycar?email=${email}`)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
+    const getCars = async () => {
+      const email = user.email;
+      const url = `https://thawing-retreat-14463.herokuapp.com/mycar?email=${email}`;
+      try {
+        const { data } = await axios.get(url);
         setCar(data);
         setLoading(false);
-      });
-  }, [user, reload]);
+      } 
+      catch (error) {
+        console.log(error.message);
+        if (error.response.status === 401 || error.response.status === 403) {
+          signOut(auth);
+          navigate("/login");
+        }
+      }
+    };
+    getCars();
+  }, [user, reload, navigate]);
 
   return (
     <>
