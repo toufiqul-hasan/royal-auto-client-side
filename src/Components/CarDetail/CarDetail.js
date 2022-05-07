@@ -45,22 +45,28 @@ const CarDetail = () => {
 
   const handleDelivery = (event) => {
     event.preventDefault();
-    const quantity = car.quantity;
-    const newQuantity = parseInt(quantity - 1);
-    const brandNewQuantity = { newQuantity };
-    const url = `https://thawing-retreat-14463.herokuapp.com/car/${id}`;
-    fetch(url, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(brandNewQuantity),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setReload(!reload);
-      });
-    toast("Delivery Success!!!");
+    if (car.quantity > 0) {
+      const quantity = car.quantity;
+      const newQuantity = parseInt(quantity - 1);
+      const brandNewQuantity = { newQuantity };
+      const url = `https://thawing-retreat-14463.herokuapp.com/car/${id}`;
+      fetch(url, {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(brandNewQuantity),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setReload(!reload);
+        });
+      toast("Delivery Success!!!");
+    } 
+    else {
+      toast("Sold Out!!!");
+      return;
+    }
   };
 
   return (
