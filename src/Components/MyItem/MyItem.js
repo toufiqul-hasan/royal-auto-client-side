@@ -20,7 +20,11 @@ const MyItem = () => {
       const email = user.email;
       const url = `https://thawing-retreat-14463.herokuapp.com/mycar?email=${email}`;
       try {
-        const { data } = await axios.get(url);
+        const { data } = await axios.get(url, {
+          header: {
+            authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+          },
+        });
         setCar(data);
         setLoading(false);
       } 
