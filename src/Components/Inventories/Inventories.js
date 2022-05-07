@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "./Inventories.css";
 
-const Inventories = ({ product }) => {
+const Inventories = ({ product, reload, setReload }) => {
   const { _id, name, img, price, description, quantity, supplier } = product;
 
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const Inventories = ({ product }) => {
       })
         .then((res) => res.json())
         .then((data) => {
-          window.location.reload(true);
+          setReload(!reload);
         });
       toast("Delete Success!!!");
     }

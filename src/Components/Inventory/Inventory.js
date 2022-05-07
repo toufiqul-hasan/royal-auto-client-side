@@ -5,7 +5,7 @@ import useProducts from "../../hooks/useProducts";
 import Inventories from "../Inventories/Inventories";
 
 const Inventory = () => {
-  const [products, loading] = useProducts([]);
+  const [products, loading, reload, setReload] = useProducts([]);
   return (
     <>
       {loading ? (
@@ -16,7 +16,12 @@ const Inventory = () => {
         <div>
           <div className="products">
             {products.map((product) => (
-              <Inventories key={product._id} product={product}></Inventories>
+              <Inventories
+                key={product._id}
+                product={product}
+                reload={reload}
+                setReload={setReload}
+              ></Inventories>
             ))}
           </div>
           <div className="container text-center mb-5">

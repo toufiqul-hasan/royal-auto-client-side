@@ -8,6 +8,7 @@ const CarDetail = () => {
   const [loading, setLoading] = useState(false);
   const { id } = useParams();
   const [car, setCar] = useState({});
+  const [reload, setReload] = useState(true);
 
   useEffect(() => {
     setLoading(true);
@@ -18,7 +19,7 @@ const CarDetail = () => {
         setCar(data);
         setLoading(false);
       });
-  }, [id]);
+  }, [id, reload]);
 
   const handleRestock = (event) => {
     event.preventDefault();
@@ -36,7 +37,7 @@ const CarDetail = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        window.location.reload(true);
+        setReload(!reload);
         event.target.reset();
       });
     toast("Restock Success!!!");
@@ -57,7 +58,7 @@ const CarDetail = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        window.location.reload(true);
+        setReload(!reload);
       });
     toast("Delivery Success!!!");
   };
