@@ -1,8 +1,8 @@
 import React from "react";
-import { Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import useProducts from "../../hooks/useProducts";
+import { Spinner } from "react-bootstrap";
 import Product from "../Product/Product";
+import useProducts from "../../hooks/useProducts";
 import "./FeaturedCars.css";
 
 const FeaturedCars = () => {

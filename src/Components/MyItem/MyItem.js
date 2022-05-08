@@ -3,7 +3,7 @@ import { auth } from "../../firebase.init";
 import { useAuthState } from "react-firebase-hooks/auth";
 import MyItems from "../MyItems/MyItems";
 import { Spinner } from "react-bootstrap";
-import axiosPrivate from '../../api/axiosPrivate';
+import axiosPrivate from "../../api/axiosPrivate";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
@@ -20,12 +20,10 @@ const MyItem = () => {
       const email = user.email;
       const url = `https://thawing-retreat-14463.herokuapp.com/mycar?email=${email}`;
       try {
-        const {data} = await axiosPrivate.get(url);
+        const { data } = await axiosPrivate.get(url);
         setCar(data);
         setLoading(false);
-      } 
-      catch (error) {
-        console.log(error.message);
+      } catch (error) {
         if (error.response.status === 401 || error.response.status === 403) {
           signOut(auth);
           navigate("/login");
@@ -43,6 +41,7 @@ const MyItem = () => {
         </div>
       ) : (
         <div>
+          <div className="title mt-3">MY ITEM</div>
           <div className="products">
             {car.map((car) => (
               <MyItems

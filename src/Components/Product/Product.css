@@ -3,9 +3,9 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
   row-gap: 20px;
+  padding: 0 10%;
   margin-top: 25px;
   margin-bottom: 25px;
-  padding: 0 10%;
 }
 
 .products img {
@@ -27,7 +27,7 @@
 }
 
 /*-------------------------------------------------------------*/
-/* MEDIA QUERIES FOR MOBILE DEVICES */
+            /* MEDIA QUERIES FOR MOBILE DEVICES */
 /*-------------------------------------------------------------*/
 
 @media (max-width:800px) {

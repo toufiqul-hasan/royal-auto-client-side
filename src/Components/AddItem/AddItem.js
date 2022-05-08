@@ -27,20 +27,32 @@ const AddItem = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("success", data);
-        toast("Product Added Successful!!!");
+        toast("Product has been added successfully!");
         event.target.reset();
       });
   };
 
   return (
     <div className="login-container mt-3 mb-5">
-      <div className="login-title">ADD ITEM</div>
+      <div className="title">ADD ITEM</div>
       <form className="login-form" onSubmit={handleAddItem}>
-        <input name="email" type="email" value={user?.email} placeholder="Your Email" required readOnly disabled />
+        <input
+          name="email"
+          type="email"
+          value={user?.email}
+          placeholder="Your Email"
+          required
+          readOnly
+          disabled
+        />
         <input name="name" type="text" placeholder="Product Name" required />
         <input name="price" type="text" placeholder="Price" required />
-        <textarea name="description" type="text" placeholder="Description" required />
+        <textarea
+          name="description"
+          type="text"
+          placeholder="Description"
+          required
+        />
         <input name="img" type="text" placeholder="Image URL" required />
         <input name="quantity" type="text" placeholder="Quantity" required />
         <input name="supplier" type="text" placeholder="Supplier" required />

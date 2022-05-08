@@ -1,5 +1,5 @@
 .banner-section {
-  background-image: url("../../Assets/Images/banner-image.jpg");
+  background-image: url("../../Assets/Images/bannerImage.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +21,7 @@
   font-size: 20px;
 }
 
-.zindex {
+.banner-zindex {
   position: relative;
   z-index: 1;
 }

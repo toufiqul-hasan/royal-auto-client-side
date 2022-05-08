@@ -9,9 +9,9 @@
 }
 
 blockquote {
-  text-align: justify;
   margin: 10%;
   padding: 2%;
+  text-align: justify;
   font-style: italic;
   line-height: 145%;
   position: relative;

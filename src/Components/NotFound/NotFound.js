@@ -1,6 +1,6 @@
 import React from "react";
-import error404 from "../../Assets/Images/error404.gif";
 import "./NotFound.css";
+import error404 from "../../Assets/Images/error404.gif";
 
 const NotFound = () => {
   return (

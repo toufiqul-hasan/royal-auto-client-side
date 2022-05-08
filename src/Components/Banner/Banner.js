@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Banner.css";
+
 const Banner = () => {
   return (
     <div className="banner-section">
       <div className="container">
-        <div className="zindex">
+        <div className="banner-zindex">
           <div className="row">
             <div className="col-lg-4">
               <div className="banner-content">

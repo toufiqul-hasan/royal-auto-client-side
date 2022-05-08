@@ -1,7 +1,7 @@
 import React from "react";
-import t1 from "../../Assets/Images/t1.jpg";
-import t2 from "../../Assets/Images/t2.jpg";
-import t3 from "../../Assets/Images/t3.jpg";
+import team1 from "../../Assets/Images/team1.jpg";
+import team2 from "../../Assets/Images/team2.jpg";
+import team3 from "../../Assets/Images/team3.jpg";
 import "./Team.css";
 
 const Team = () => {
@@ -25,7 +25,7 @@ const Team = () => {
           <div className="col-lg-4">
             <div className="team-member">
               <div className="team-img">
-                <img src={t1} alt="" />
+                <img src={team1} alt="" />
                 <div className="team-more-info">
                   <div className="info-wrap">
                     <p>
@@ -46,7 +46,7 @@ const Team = () => {
           <div className="col-lg-4">
             <div className="team-member">
               <div className="team-img">
-                <img src={t2} alt="" />
+                <img src={team2} alt="" />
                 <div className="team-more-info">
                   <div className="info-wrap">
                     <p>
@@ -67,7 +67,7 @@ const Team = () => {
           <div className="col-lg-4">
             <div className="team-member">
               <div className="team-img">
-                <img src={t3} alt="" />
+                <img src={team3} alt="" />
                 <div className="team-more-info">
                   <div className="info-wrap">
                     <p>

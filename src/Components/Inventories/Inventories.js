@@ -1,7 +1,7 @@
 import React from "react";
+import { toast } from "react-toastify";
 import { Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 import "./Inventories.css";
 
 const Inventories = ({ product, reload, setReload }) => {
@@ -23,7 +23,7 @@ const Inventories = ({ product, reload, setReload }) => {
         .then((data) => {
           setReload(!reload);
         });
-      toast("Delete Success!!!");
+      toast("Product has been deleted successfully !");
     }
   };
 
@@ -42,7 +42,7 @@ const Inventories = ({ product, reload, setReload }) => {
               className="primary-button"
               onClick={() => navigateToServiceDetail(_id)}
             >
-              Update
+              Manage
             </button>
             <button
               className="delete-button"

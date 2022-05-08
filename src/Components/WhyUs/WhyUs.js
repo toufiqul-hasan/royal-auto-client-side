@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  FaRegMoneyBillAlt,
-  FaThumbsUp,
-  FaHistory,
-  FaUsers,
-} from "react-icons/fa";
+import { FaRegMoneyBillAlt, FaThumbsUp, FaHistory, FaUsers } from "react-icons/fa";
 import "./WhyUs.css";
 
 const WhyUs = () => {

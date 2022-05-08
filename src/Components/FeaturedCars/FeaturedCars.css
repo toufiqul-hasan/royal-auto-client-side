@@ -1,7 +1,7 @@
 .section-title h2:after {
+  background-color: #e67e22;
   display: block;
   height: 2px;
-  background-color: #e67e22;
   content: " ";
   width: 100px;
   margin: 0 auto;

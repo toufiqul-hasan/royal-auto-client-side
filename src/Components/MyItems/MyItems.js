@@ -1,7 +1,7 @@
 import React from "react";
+import { toast } from "react-toastify";
 import { Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 
 const MyItems = ({ car, reload, setReload }) => {
   const { _id, name, img, price, description, quantity, supplier } = car;
@@ -21,7 +21,7 @@ const MyItems = ({ car, reload, setReload }) => {
         .then((data) => {
           setReload(!reload);
         });
-      toast("Delete Success!!!");
+      toast("Product has been deleted successfully !");
     }
   };
 
@@ -40,7 +40,7 @@ const MyItems = ({ car, reload, setReload }) => {
               className="primary-button"
               onClick={() => navigateToServiceDetail(_id)}
             >
-              Update
+              Manage
             </button>
             <button
               className="delete-button"

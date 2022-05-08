@@ -49,7 +49,7 @@ const Testimonial = () => {
             staff!
             <cite>
               <img src={customer3} alt="" />
-              Milton Chapman
+              Robert Chapman
             </cite>
           </blockquote>
         </div>

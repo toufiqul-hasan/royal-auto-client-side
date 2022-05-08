@@ -1,6 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./Product.css";
 
 const Product = ({ product }) => {
@@ -25,7 +25,7 @@ const Product = ({ product }) => {
             className="primary-button"
             onClick={() => navigateToServiceDetail(_id)}
           >
-            Update
+            Manage
           </button>
         </Card.Body>
       </Card>

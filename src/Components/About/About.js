@@ -1,7 +1,7 @@
 import React from "react";
 import AboutUs from "../AboutUs/AboutUs";
-import ChooseUs from "../ChooseUs/ChooseUs";
 import Team from "../Team/Team";
+import ChooseUs from "../ChooseUs/ChooseUs";
 
 const About = () => {
   return (

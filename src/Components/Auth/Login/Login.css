@@ -3,7 +3,7 @@
   margin: auto;
 }
 
-.login-title {
+.title {
   text-align: center;
   font-weight: 900;
   font-size: 1.8rem;
@@ -32,8 +32,8 @@
 
 .login-container button {
   color: white;
-  margin-top: 20px;
   background: #fa6a2f;
+  margin-top: 20px;
   height: 40px;
   border-radius: 20px;
   cursor: pointer;

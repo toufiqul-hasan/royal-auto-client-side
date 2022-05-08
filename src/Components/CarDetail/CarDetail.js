@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import { Card, Spinner } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
-import { toast } from "react-toastify";
 import "./CarDetail.css";
 
 const CarDetail = () => {
@@ -40,7 +40,7 @@ const CarDetail = () => {
         setReload(!reload);
         event.target.reset();
       });
-    toast("Restock Success!!!");
+    toast("Product has been restocked successfully !");
   };
 
   const handleDelivery = (event) => {
@@ -61,10 +61,9 @@ const CarDetail = () => {
         .then((data) => {
           setReload(!reload);
         });
-      toast("Delivery Success!!!");
-    } 
-    else {
-      toast("Sold Out!!!");
+      toast("Product has been delivered successfully !");
+    } else {
+      toast("Sold Out...!!!");
       return;
     }
   };
@@ -77,6 +76,7 @@ const CarDetail = () => {
         </div>
       ) : (
         <div className="container text-center mb-5">
+          <div className="title mt-3">PRODUCT DETAILS</div>
           <Card className="car">
             <Card.Img variant="top" src={car.img} />
             <Card.Body>

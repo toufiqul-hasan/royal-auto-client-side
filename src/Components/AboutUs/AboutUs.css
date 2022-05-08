@@ -7,12 +7,13 @@
 }
 
 .about-content {
-	padding:20px 0;	
+  padding: 20px 0;
 }
 
 .about-content h3 {
-	margin-top:25px;
+  margin-top: 25px;
 }
+
 .about-content p {
   text-align: justify;
 }
@@ -22,7 +23,7 @@
 }
 
 .about-img {
-  background: #000000 none repeat scroll 0 0;
+  background: #000000;
   border-radius: 100%;
   overflow: hidden;
 }

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import { Nav, Spinner } from "react-bootstrap";
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 import { auth } from "../../../firebase.init";
 import google from "../../../Assets/Images/google.png";
 import axios from "axios";
@@ -48,7 +48,6 @@ const Login = () => {
     const email = userInfo.email;
     const { data } = await axios.post("https://thawing-retreat-14463.herokuapp.com/login", { email });
     localStorage.setItem("accessToken", data.accessToken);
-    navigate(from, { replace: true });
   };
 
   const navigate = useNavigate();
@@ -66,13 +65,13 @@ const Login = () => {
     if (error) {
       switch (error?.code) {
         case "auth/invalid-email":
-          toast("Invalid email. Please provide a valid email!");
+          toast("Invalid email. Please provide a valid email !");
           break;
         case "auth/wrong-password":
-          toast("Wrong password. Please provide a valid password!.");
+          toast("Wrong password. Please provide a correct password !");
           break;
         default:
-          toast("Something went wrong!");
+          toast("Something went wrong !");
       }
     }
   }, [hookError, googleError]);
@@ -87,7 +86,7 @@ const Login = () => {
 
   return (
     <div className="login-container mt-3 mb-5">
-      <div className="login-title">LOGIN</div>
+      <div className="title">LOGIN</div>
       <form className="login-form" onSubmit={handleLogin}>
         <input
           type="text"

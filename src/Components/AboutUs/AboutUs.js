@@ -1,8 +1,8 @@
 import React from "react";
-import a1 from "../../Assets/Images/a1.jpg";
-import a2 from "../../Assets/Images/a2.jpg";
-import a3 from "../../Assets/Images/a3.jpg";
-import a4 from "../../Assets/Images/a4.jpg";
+import about1 from "../../Assets/Images/about1.jpg";
+import about2 from "../../Assets/Images/about2.jpg";
+import about3 from "../../Assets/Images/about3.jpg";
+import about4 from "../../Assets/Images/about4.jpg";
 import "./AboutUs.css";
 
 const AboutUs = () => {
@@ -32,7 +32,7 @@ const AboutUs = () => {
             <div className="about-content row">
               <div className="col-md-5 col-sm-4 col-xs-4">
                 <div className="about-img">
-                  <img src={a1} alt="" />
+                  <img src={about1} alt="" />
                 </div>
               </div>
               <div className="col-md-7 col-sm-8 col-xs-8">
@@ -51,7 +51,7 @@ const AboutUs = () => {
             <div className="about-content row">
               <div className="col-md-5 col-sm-4 col-xs-4">
                 <div className="about-img">
-                  <img src={a2} alt="" />
+                  <img src={about2} alt="" />
                 </div>
               </div>
               <div className="col-md-7 col-sm-8 col-xs-8">
@@ -70,7 +70,7 @@ const AboutUs = () => {
             <div className="about-content row">
               <div className="col-md-5 col-sm-4 col-xs-4">
                 <div className="about-img">
-                  <img src={a3} alt="" />
+                  <img src={about3} alt="" />
                 </div>
               </div>
               <div className="col-md-7 col-sm-8 col-xs-8">
@@ -88,7 +88,7 @@ const AboutUs = () => {
             <div className="about-content row">
               <div className="col-md-5 col-sm-4 col-xs-4">
                 <div className="about-img">
-                  <img src={a4} alt="" />
+                  <img src={about4} alt="" />
                 </div>
               </div>
               <div className="col-md-7 col-sm-8 col-xs-8">

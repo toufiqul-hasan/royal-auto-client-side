@@ -129,7 +129,7 @@ const Blogs = () => {
               passing the JWT in HTTP authorization header.
             </li>
             <li>
-              Resource server then confirms the reliability of the token using
+              Resource server then confirm the reliability of the token using
               the secret salt or public key.
             </li>
           </ul>

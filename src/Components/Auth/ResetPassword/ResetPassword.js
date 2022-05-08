@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 import { Nav } from "react-bootstrap";
 import { useSendPasswordResetEmail } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
 import { auth } from "../../../firebase.init";
 
 const ResetPassword = () => {
@@ -15,7 +15,7 @@ const ResetPassword = () => {
   return (
     <div>
       <div className="login-container mt-3 mb-5">
-        <div className="login-title">Reset Password</div>
+        <div className="title">Reset Password</div>
         <form className="login-form" onSubmit={handleResetPassword}>
           <input
             type="email"
@@ -28,7 +28,7 @@ const ResetPassword = () => {
           <button
             onClick={async () => {
               await sendPasswordResetEmail(email);
-              toast("Email sent. Please check your inbox!");
+              toast("Email sent. Please check your inbox !");
             }}
           >
             Submit

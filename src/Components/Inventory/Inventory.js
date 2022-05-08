@@ -1,6 +1,6 @@
 import React from "react";
-import { Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Spinner } from "react-bootstrap";
 import useProducts from "../../hooks/useProducts";
 import Inventories from "../Inventories/Inventories";
 
@@ -14,6 +14,7 @@ const Inventory = () => {
         </div>
       ) : (
         <div>
+          <div className="title mt-3">INVENTORY</div>
           <div className="products">
             {products.map((product) => (
               <Inventories

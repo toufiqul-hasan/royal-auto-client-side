@@ -3,7 +3,7 @@
 }
 
 .team-member {
-  background: #ffffff none repeat scroll 0 0;
+  background: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -40,7 +40,7 @@
 }
 
 .team-more-info::after {
-  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.8);
   content: "";
   height: 100%;
   left: 0;

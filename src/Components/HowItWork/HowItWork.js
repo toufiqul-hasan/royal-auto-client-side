@@ -1,8 +1,8 @@
 import React from "react";
-import i1 from "../../Assets/Images/i1.png";
-import i2 from "../../Assets/Images/i2.png";
-import i3 from "../../Assets/Images/i3.png";
-import i4 from "../../Assets/Images/i4.png";
+import homeIcon1 from "../../Assets/Images/homeIcon1.png";
+import homeIcon2 from "../../Assets/Images/homeIcon2.png";
+import homeIcon3 from "../../Assets/Images/homeIcon3.png";
+import homeIcon4 from "../../Assets/Images/homeIcon4.png";
 import "./HowItWork.css";
 
 const HowItWork = () => {
@@ -16,7 +16,7 @@ const HowItWork = () => {
         <div className="col-md-3 col-sm-6">
           <div className="steps">
             <div className="icons">
-              <img src={i1} alt="" />
+              <img src={homeIcon1} alt="" />
             </div>
             <h5>Search Our Inventory</h5>
             <p>
@@ -28,7 +28,7 @@ const HowItWork = () => {
         <div className="col-md-3 col-sm-6">
           <div className="steps">
             <div className="icons">
-              <img src={i2} alt="" />
+              <img src={homeIcon2} alt="" />
             </div>
             <h5>Choose The Car You Like</h5>
             <p>
@@ -40,7 +40,7 @@ const HowItWork = () => {
         <div className="col-md-3 col-sm-6">
           <div className="steps">
             <div className="icons">
-              <img src={i3} alt="" />
+              <img src={homeIcon3} alt="" />
             </div>
             <h5>Apply For Auto Finance</h5>
             <p>
@@ -51,7 +51,7 @@ const HowItWork = () => {
         <div className="col-md-3 col-sm-6">
           <div className="steps">
             <div className="icons">
-              <img src={i4} alt="" />
+              <img src={homeIcon4} alt="" />
             </div>
             <h5>Get Approved & Drive</h5>
             <p>After getting the loan you are ready to buy your desire car.</p>

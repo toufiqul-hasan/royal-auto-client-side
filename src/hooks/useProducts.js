@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 const useProducts = () => {
   const [loading, setLoading] = useState(false);
-  const [products, setProducts] = useState([]);
   const [reload, setReload] = useState(true);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     setLoading(true);
