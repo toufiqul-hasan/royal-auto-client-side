@@ -13,7 +13,7 @@ const AddItem = () => {
     const price = event.target.price.value;
     const description = event.target.description.value;
     const img = event.target.img.value;
-    const quantity = event.target.quantity.value;
+    const quantity = parseInt(event.target.quantity.value);
     const supplier = event.target.supplier.value;
 
     const info = { email, name, price, description, img, quantity, supplier };
