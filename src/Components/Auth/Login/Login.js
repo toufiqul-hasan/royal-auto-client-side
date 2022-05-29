@@ -46,7 +46,7 @@ const Login = () => {
     event.preventDefault();
     await signInWithEmailAndPassword(userInfo.email, userInfo.password);
     const email = userInfo.email;
-    const { data } = await axios.post("https://thawing-retreat-14463.herokuapp.com/login", { email });
+    const { data } = await axios.post("https://royal-auto.herokuapp.com/login", { email });
     localStorage.setItem("accessToken", data.accessToken);
   };
 

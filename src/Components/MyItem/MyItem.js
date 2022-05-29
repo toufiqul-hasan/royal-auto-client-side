@@ -18,7 +18,7 @@ const MyItem = () => {
     setLoading(true);
     const getCars = async () => {
       const email = user.email;
-      const url = `https://thawing-retreat-14463.herokuapp.com/mycar?email=${email}`;
+      const url = `https://royal-auto.herokuapp.com/mycar?email=${email}`;
       try {
         const { data } = await axiosPrivate.get(url);
         setCar(data);
