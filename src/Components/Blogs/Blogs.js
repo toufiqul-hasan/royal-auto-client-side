@@ -3,10 +3,8 @@ import "./Blogs.css";
 
 const Blogs = () => {
   return (
-    <div className="blogs">
-      <h2>Question & Answer</h2>
-      <hr />
-      <h4>Question 1: What is the difference between JavaScript & NodeJS?</h4>
+    <div className="container mt-4 blogs">
+      <h4>What is the difference between JavaScript & NodeJS?</h4>
       <p>Answer: </p>
       <table>
         <thead>
@@ -47,8 +45,8 @@ const Blogs = () => {
             </td>
           </tr>
         </tbody>
-      </table>
-      <h4>Question 2: What is the difference between SQL & NoSQL?</h4>
+      </table> <br />
+      <h4>What is the difference between SQL & NoSQL?</h4>
       <p>Answer: </p>
       <table>
         <thead>
@@ -82,9 +80,9 @@ const Blogs = () => {
             <td>NoSQL databases are no declarative query language.</td>
           </tr>
         </tbody>
-      </table>
+      </table> <br />
       <h4>
-        Question 3: When should you use NodeJS & when should you use MongoDB?
+        When should you use NodeJS & when should you use MongoDB?
       </h4>
       <p>
         Answer: <br />
@@ -106,7 +104,7 @@ const Blogs = () => {
           </ul>
         </div>
       </p>
-      <h4>Question 4: What is the purpose of JWT? How does it work?</h4>
+      <h4>What is the purpose of JWT? How does it work?</h4>
       <p>
         Answer: <br />
         Purpose of JWT: <br />

@@ -1,22 +1,9 @@
-.blogs {
-  padding: 0 10%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.blogs h2 {
-  text-align: center;
-}
-
 .blogs h4 {
   text-align: justify;
-  margin-top: 30px;
-  font-weight: 500;
 }
 
 .blogs p {
   text-align: justify;
-  font-weight: 400;
 }
 
 .blogs table {
