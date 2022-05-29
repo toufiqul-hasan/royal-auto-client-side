@@ -1,10 +1,10 @@
 import React from "react";
 import { toast } from "react-toastify";
-import { Card } from "react-bootstrap";
+import { FaTrash, FaEdit } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const MyItems = ({ car, reload, setReload }) => {
-  const { _id, name, img, price, description, quantity, supplier } = car;
+const MyItems = ({ car, index, reload, setReload }) => {
+  const { _id, name, price, quantity, supplier } = car;
   const navigate = useNavigate();
   const navigateToServiceDetail = (id) => {
     navigate(`/inventory/${id}`);
@@ -26,32 +26,26 @@ const MyItems = ({ car, reload, setReload }) => {
   };
 
   return (
-    <div className="mb-5">
-      <Card className="product">
-        <Card.Img variant="top" src={img} />
-        <Card.Body>
-          <Card.Title>{name}</Card.Title>
-          <Card.Text>{price}</Card.Text>
-          <Card.Text>{description}</Card.Text>
-          <Card.Text>Quantity: {quantity}</Card.Text>
-          <Card.Text>Supplier: {supplier}</Card.Text>
-          <div className="d-flex justify-content-between">
-            <button
-              className="primary-button"
-              onClick={() => navigateToServiceDetail(_id)}
-            >
-              Manage
-            </button>
-            <button
-              className="delete-button"
-              onClick={() => handleProductDelete()}
-            >
-              Delete
-            </button>
-          </div>
-        </Card.Body>
-      </Card>
-    </div>
+    <tr>
+      <th className="text-center">{index + 1}</th>
+      <th>{name}</th>
+      <th className="text-center">{price}</th>
+      <th className="text-center">{quantity}</th>
+      <th className="text-center">{supplier}</th>
+      <th className="text-center">
+        <button
+          className="manage-button"
+          onClick={() => navigateToServiceDetail(_id)}
+        >
+          <FaEdit />
+        </button>
+      </th>
+      <th className="text-center">
+        <button className="delete-button" onClick={() => handleProductDelete()}>
+          <FaTrash />
+        </button>
+      </th>
+    </tr>
   );
 };
 
