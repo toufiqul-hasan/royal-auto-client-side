@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { auth } from "../../firebase.init";
 import { useAuthState } from "react-firebase-hooks/auth";
-import MyItems from "../MyItems/MyItems";
 import { Spinner } from "react-bootstrap";
 import axiosPrivate from "../../api/axiosPrivate";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import Table from "react-bootstrap/Table";
+import MyItems from "../MyItems/MyItems";
 
 const MyItem = () => {
   const [user] = useAuthState(auth);

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 const useProducts = () => {
+  const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [reload, setReload] = useState(true);
-  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     setLoading(true);

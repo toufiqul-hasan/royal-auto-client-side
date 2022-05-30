@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { toast } from "react-toastify";
 import { Nav, Spinner } from "react-bootstrap";
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { auth } from "../../../firebase.init";
+import { toast } from "react-toastify";
 import google from "../../../Assets/Images/google.png";
 import axios from "axios";
 import "./Login.css";

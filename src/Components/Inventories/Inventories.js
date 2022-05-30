@@ -1,6 +1,6 @@
 import React from "react";
-import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { FaTrash, FaEdit } from "react-icons/fa";
 import "./Inventories.css";
 

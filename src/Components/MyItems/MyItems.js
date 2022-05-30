@@ -1,7 +1,7 @@
 import React from "react";
-import { toast } from "react-toastify";
 import { FaTrash, FaEdit } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const MyItems = ({ car, index, reload, setReload }) => {
   const { _id, name, price, quantity, supplier } = car;

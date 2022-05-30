@@ -5,9 +5,9 @@ import { Link, useParams } from "react-router-dom";
 import "./CarDetail.css";
 
 const CarDetail = () => {
-  const [loading, setLoading] = useState(false);
   const { id } = useParams();
   const [car, setCar] = useState({});
+  const [loading, setLoading] = useState(false);
   const [reload, setReload] = useState(true);
 
   useEffect(() => {

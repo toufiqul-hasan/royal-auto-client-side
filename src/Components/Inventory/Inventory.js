@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Table from "react-bootstrap/Table";
 import useProducts from "../../hooks/useProducts";
 import Inventories from "../Inventories/Inventories";
