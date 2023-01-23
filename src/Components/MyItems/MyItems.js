@@ -13,7 +13,7 @@ const MyItems = ({ car, index, reload, setReload }) => {
   const handleProductDelete = () => {
     const proceed = window.confirm("Do you really want to delete?");
     if (proceed) {
-      const url = `https://royal-auto.herokuapp.com/car/${_id}`;
+      const url = `https://royal-auto.onrender.com/car/${_id}`;
       fetch(url, {
         method: "DELETE",
       })

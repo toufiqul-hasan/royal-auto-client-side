@@ -12,7 +12,7 @@ const CarDetail = () => {
 
   useEffect(() => {
     setLoading(true);
-    const url = `https://royal-auto.herokuapp.com/car/${id}`;
+    const url = `https://royal-auto.onrender.com/car/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -27,7 +27,7 @@ const CarDetail = () => {
     const quantityInput = parseInt(event.target.amount.value);
     const newQuantity = parseInt(quantity + quantityInput);
     const brandNewQuantity = { newQuantity };
-    const url = `https://royal-auto.herokuapp.com/car/${id}`;
+    const url = `https://royal-auto.onrender.com/car/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -49,7 +49,7 @@ const CarDetail = () => {
       const quantity = car.quantity;
       const newQuantity = parseInt(quantity - 1);
       const brandNewQuantity = { newQuantity };
-      const url = `https://royal-auto.herokuapp.com/car/${id}`;
+      const url = `https://royal-auto.onrender.com/car/${id}`;
       fetch(url, {
         method: "PUT",
         headers: {

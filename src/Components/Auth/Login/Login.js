@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { Nav, Spinner } from "react-bootstrap";
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import {
+  useSignInWithEmailAndPassword,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { auth } from "../../../firebase.init";
 import { toast } from "react-toastify";
@@ -10,9 +13,15 @@ import "./Login.css";
 
 const Login = () => {
   const [userInfo, setUserInfo] = useState({ email: "", password: "" });
-  const [errors, setErrors] = useState({ email: "", password: "", general: "" });
-  const [signInWithEmailAndPassword, user, loading, hookError] = useSignInWithEmailAndPassword(auth);
-  const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
+  const [errors, setErrors] = useState({
+    email: "",
+    password: "",
+    general: "",
+  });
+  const [signInWithEmailAndPassword, user, loading, hookError] =
+    useSignInWithEmailAndPassword(auth);
+  const [signInWithGoogle, googleUser, googleLoading, googleError] =
+    useSignInWithGoogle(auth);
 
   const handleEmailChange = (event) => {
     const emailValidation = /\S+@\S+\.\S+/;
@@ -21,8 +30,7 @@ const Login = () => {
     if (validEmail) {
       setUserInfo({ ...userInfo, email: event.target.value });
       setErrors({ ...errors, email: "" });
-    } 
-    else {
+    } else {
       setErrors({ ...errors, email: "Invalid email" });
       setUserInfo({ ...userInfo, email: "" });
     }
@@ -35,8 +43,7 @@ const Login = () => {
     if (validPassword) {
       setUserInfo({ ...userInfo, password: event.target.value });
       setErrors({ ...errors, password: "" });
-    } 
-    else {
+    } else {
       setErrors({ ...errors, password: "Invalid password" });
       setUserInfo({ ...userInfo, password: "" });
     }
@@ -46,7 +53,9 @@ const Login = () => {
     event.preventDefault();
     await signInWithEmailAndPassword(userInfo.email, userInfo.password);
     const email = userInfo.email;
-    const { data } = await axios.post("https://royal-auto.herokuapp.com/login", { email });
+    const { data } = await axios.post("https://royal-auto.onrender.com/login", {
+      email,
+    });
     localStorage.setItem("accessToken", data.accessToken);
   };
 

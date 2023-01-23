@@ -7,7 +7,7 @@ const useProducts = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://royal-auto.herokuapp.com/car")
+    fetch("https://royal-auto.onrender.com/car")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

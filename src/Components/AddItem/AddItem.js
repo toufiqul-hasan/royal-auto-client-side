@@ -18,7 +18,7 @@ const AddItem = () => {
 
     const info = { email, name, price, description, img, quantity, supplier };
 
-    fetch("https://royal-auto.herokuapp.com/car", {
+    fetch("https://royal-auto.onrender.com/car", {
       method: "POST",
       headers: {
         "content-type": "application/json",
